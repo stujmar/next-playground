@@ -8,7 +8,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
+      <main className="flex flex-col items-center justify-center flex-1 px-20 text-left">
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
           <a className="text-blue-600" href="https://nextjs.org">
@@ -29,7 +29,7 @@ export default function Home() {
             className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
+            <p className="mt-4 text-xl bg-blue-200">
               Find in-depth information about Next.js features and API.
             </p>
           </a>
