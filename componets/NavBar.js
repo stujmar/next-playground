@@ -38,10 +38,10 @@ const NavBar = () => {
             <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
                 {/*<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->*/}
-                <Link href="#"><a class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a></Link>
-                <Link href="#"><a class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a></Link>
-                <Link href="#"><a class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a></Link>
-                <Link href="#"><a class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a></Link>
+                <Link href="/"><a class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a></Link>
+                <Link href="/team"><a class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a></Link>
+                <Link href="/projects"><a class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a></Link>
+                <Link href="/calendar"><a class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a></Link>
             </div>
             </div>
         </div>
