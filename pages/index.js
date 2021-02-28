@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Index = () => {
   return (
-    <div className="container">
+    <div className="bg-gray-200">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
