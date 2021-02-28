@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const About = () => {
     return (
-        <div>About
+        <div>About <br />
         <Link href='/'><a>Home</a></Link> 
         </div>
     )

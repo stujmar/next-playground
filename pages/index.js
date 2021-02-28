@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-export default () => {
+const Index = () => {
   return (
     <div className="container">
       <Head>
@@ -18,8 +18,9 @@ export default () => {
         </h1>
 
         <p className="description">
-          <Link href="/about"><a>About</a></Link> 
           Get started by editing <code>pages/index.js</code>
+          <br />
+          <Link href="/about"><a>About</a></Link> 
         </p>
 
         <div className="grid">
@@ -212,3 +213,5 @@ export default () => {
     </div>
   )
 }
+
+export default Index;
