@@ -1,10 +1,15 @@
 import React from "react";
-import Link 
+import Link from "next/link"
 
-const projects = () => {
+const Projects = () => {
     return (
-        <div>Projects</div>
+        <div>
+            <p>
+            Projects
+            </p>
+            <Link href="/"><a>Home</a></Link>
+        </div>
     )
 }
 
-export default projects;
+export default Projects;
