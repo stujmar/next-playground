@@ -1,4 +1,5 @@
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const Layout = (props) => (
     <div>
@@ -7,3 +8,5 @@ const Layout = (props) => (
         <Footer />
     </div>
 )
+
+export default Layout;
