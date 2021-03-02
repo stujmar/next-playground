@@ -1,10 +1,37 @@
   
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { classNames } from '../utils/ClassNames';
+// import { classNames } from '../utils/ClassNames';
 import Quill from "quill";
 // import 'quill/dist/quill.snow.css';
 // import 'quill/dist/quill.bubble.css';
+
+const classNames = (...args) => {
+    if (args) {
+        let classes = [];
+
+        for (let i = 0; i < args.length; i++) {
+            let className = args[i];
+
+            if (!className) continue;
+
+            const type = typeof className;
+
+            if (type === 'string' || type === 'number') {
+                classes.push(className);
+            }
+            else if (type === 'object') {
+                const _classes = Array.isArray(className) ? className : Object.entries(className).map(([key, value]) => !!value ? key : null);
+
+                classes = _classes.length ? classes.concat(_classes.filter(c => !!c)) : classes;
+            }
+        }
+
+        return classes.join(' ');
+    }
+
+    return null;
+}
 
 export class Editor extends Component {
 
@@ -91,7 +118,7 @@ export class Editor extends Component {
         }
     }
 
-    render() {
+    render() {"h-full m-0 relative"
         let containerClass = classNames('p-component p-editor-container', this.props.className);
         let toolbarHeader = null;
 
