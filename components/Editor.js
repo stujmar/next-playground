@@ -118,7 +118,7 @@ export class Editor extends Component {
         }
     }
 
-    render() {"h-full m-0 relative"
+    render() {
         let containerClass = classNames('p-component p-editor-container', this.props.className);
         let toolbarHeader = null;
 
