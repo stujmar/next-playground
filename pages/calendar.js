@@ -7,6 +7,7 @@ import Layout from "../components/Layout"
 // // import { Editor } from "../components/Editor";
 // import { Editor } from 'primereact/editor';
 import ReactQuill from 'react-quill'; // ES6
+import FormHtmlEditor from '../components/QuillWrapper.js'
 const Calendar = () => {
     const [text, setText] = useState('')
 
@@ -14,9 +15,10 @@ const Calendar = () => {
         <Layout>
             <p>
             Calendar
+            <FormHtmlEditor />
             {/* <Editor style={{height:'320px'}} value={text} onTextChange={(e) => setText(e.htmlValue)} /> */}
-            <ReactQuill value={text}
-                  onChange={(e) => setText(e.value)} />
+            {/* <ReactQuill value={text}
+                  onChange={(e) => setText(e.value)} /> */}
             </p>
             <Link href="/"><a>Home</a></Link>
             {text}
