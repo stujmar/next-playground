@@ -1,5 +1,6 @@
 import '../styles/globals.css';
-import '../node_modules/quill/dist/quill.snow.css'
+// import '../public/quill.snow.css';
+// import '../node_modules/quill/dist/quill.snow.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
