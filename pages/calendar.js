@@ -15,7 +15,7 @@ const Calendar = () => {
         <Layout>
             <p>
             Calendar
-            <FormHtmlEditor />
+            {/* <FormHtmlEditor /> */}
             {/* <Editor style={{height:'320px'}} value={text} onTextChange={(e) => setText(e.htmlValue)} /> */}
             {/* <ReactQuill value={text}
                   onChange={(e) => setText(e.value)} /> */}
