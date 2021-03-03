@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const output_dir = '../public/vendor/';
+const output_dir = '../public/';
 const assets = [
-  '../node_modules/react-datepicker/dist/react-datepicker.css',
-  '../node_modules/react-quill/dist/quill.snow.css',
+//   '../node_modules/react-datepicker/dist/react-datepicker.css',
+  '../node_modules/quill/dist/quill.snow.css',
 ];
 
 assets.forEach((asset_path) => {
