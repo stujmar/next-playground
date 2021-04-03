@@ -1,7 +1,40 @@
 import Head from 'next/head'
 import Layout from "../components/Layout"
+import { summer } from "smarsh-summer";
 
 export default function Home() {
+
+  let toggle = true;
+
+  const swapper = ({value, isTrue, isFalse, base }) => {
+    if (!base) {
+        return value ? isTrue : isFalse;
+    } else {
+        return value ? `${base} ${isTrue}` : `${base} ${isFalse}`;
+    }
+}
+
+
+console.log(swapper({
+  value:toggle,
+  isTrue: "truth",
+  isFalse: "I'm lying",
+  base: "these are base classes"
+}));
+
+console.log(swapper({
+  value:toggle,
+  isTrue: "truth",
+  isFalse: "I'm lying"
+}));
+
+  summer({
+    numberOne: 10,
+    numberTwo: 90
+  })
+
+  console.log(typeof summer);
+
   return (
     <Layout>
       <div>
