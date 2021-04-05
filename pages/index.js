@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout from "../components/Layout"
 import { summer } from "smarsh-summer";
+import Link from 'next/link'
 
 export default function Home() {
 
@@ -31,10 +32,6 @@ const fizzBuzz = () => {
     console.log(result);
   }
 };
-
-fizzBuzz();
-
-
 
 // console.log(swapper({
 //   value:toggle,
@@ -71,6 +68,7 @@ fizzBuzz();
                 <a className="text-blue-600" href="https://nextjs.org">
                   Next.js!
                 </a>
+                <Link href="posts/first-post"><a> First Post</a></Link>
               </h1>
 
               <p className="mt-3 text-2xl">
