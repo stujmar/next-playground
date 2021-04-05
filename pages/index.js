@@ -14,24 +14,45 @@ export default function Home() {
     }
 }
 
+const pyramid = () => {
+  let hashes = "";
+  for (let i = 0; i < 7; i++) {
+    hashes += "#";
+    console.log(hashes);
+  }
+};
 
-console.log(swapper({
-  value:toggle,
-  isTrue: "truth",
-  isFalse: "I'm lying",
-  base: "these are base classes"
-}));
+const fizzBuzz = () => {
+  for (let i = 1; i < 101; i++) {
+    let result = "";
+    result += i % 3 === 0 ? "Fizz" : "";
+    result += i % 5 === 0 ? "Buzz" : "";
+    result += result === "" ? i : "";
+    console.log(result);
+  }
+};
 
-console.log(swapper({
-  value:toggle,
-  isTrue: "truth",
-  isFalse: "I'm lying"
-}));
+fizzBuzz();
 
-  summer({
-    numberOne: 10,
-    numberTwo: 90
-  })
+
+
+// console.log(swapper({
+//   value:toggle,
+//   isTrue: "truth",
+//   isFalse: "I'm lying",
+//   base: "these are base classes"
+// }));
+
+// console.log(swapper({
+//   value:toggle,
+//   isTrue: "truth",
+//   isFalse: "I'm lying"
+// }));
+
+  // summer({
+  //   numberOne: 10,
+  //   numberTwo: 90
+  // })
 
   console.log(typeof summer);
 
