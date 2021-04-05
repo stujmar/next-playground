@@ -67,7 +67,7 @@ fizzBuzz();
 
             <main className="flex flex-col items-center justify-center flex-1 px-20 text-left">
               <h1 className="text-6xl font-bold">
-                Welcome to{' '}
+                Learn{' '}
                 <a className="text-blue-600" href="https://nextjs.org">
                   Next.js!
                 </a>
