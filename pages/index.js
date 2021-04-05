@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from "../components/Layout"
 import { summer } from "smarsh-summer";
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
 
@@ -70,7 +71,6 @@ const fizzBuzz = () => {
                 </a>
                 <Link href="posts/first-post"><a> First Post</a></Link>
               </h1>
-
               <p className="mt-3 text-2xl">
                 Get started by editing{' '}
                 <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
