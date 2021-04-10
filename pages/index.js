@@ -3,8 +3,11 @@ import Layout from "../components/Layout"
 import { summer } from "smarsh-summer";
 import Link from 'next/link'
 import Image from 'next/image'
+import { addTwo } from '../util/math';
 
 export default function Home() {
+
+  console.log(addTwo(4));
 
   let toggle = true;
 
