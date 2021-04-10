@@ -4,6 +4,7 @@ import '../styles/globals.css';
 // import '../node_modules/quill/dist/quill.snow.css';
 
 function MyApp({ Component, pageProps }) {
+  const [ isLoaded, setIsloaded ] = useState(false);
 
   return <Component {...pageProps} />
 }
